@@ -1,5 +1,5 @@
 \AtBeginDocument{%
-\begingroup\pagestyle{empty}\raggedleft\parindent0pt
+\begingroup\pagestyle{empty}\raggedright\parindent0pt
 \titulagemfront{}
 \vfill
 \clearpage
@@ -43,6 +43,8 @@ Portuguesa de 1990, em vigor no Brasil desde 2009.}\\
 	
 \vfill\textit{Direitos reservados em l\'ingua\\ portuguesa somente para o Brasil}\\\medskip
 
+\vfill\textit{The translation of this book was supported by Lithuanian Culture Institute}\bigskip
+
 %
 \textsc{ayllon editora}\\
 R.~Fradique Coutinho, 1139\\
@@ -51,12 +53,12 @@ Telefone/Fax +55 11 3097 8304\\\smallskip
 ayllon@hedra.com.br\\
 \bigskip
 Foi feito o depósito legal.\\\endgroup
-\pagebreak\raggedleft
+\pagebreak\raggedright
 %% Front ---------------------------------------------------------
 % Titulo
 \titulagem
 
-{\Large \autor \par\vspace{1.5ex}}
+{\Formular\Large \autor \par\vspace{1.5ex}}
 \ifdef{\organizador}{{\small {\organizador} (\textit{organização})} \par}{}
 \ifdef{\introdutor}{{\small {\introdutor} (\textit{prefácio})} \par}{}
 \ifdef{\tradutor}{{\small {\tradutor} (\textit{tradução})}\par}{}\vspace{1.5cm}
@@ -82,7 +84,7 @@ Foi feito o depósito legal.\\\endgroup
 % Sumário -------------------------------------------------------
 
 \sumario{}
-\IfFileExists{INTRO.tex}{\include{INTRO}}
+%\IfFileExists{INTRO.tex}{\include{INTRO}}
 
 %\part{\def\break{}\titulo}
 %\IfFileExists{TEXTO.tex}{\mbox{}\include{TEXTO}}
