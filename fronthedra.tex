@@ -29,7 +29,7 @@
 %\linha{capa}{\capa}
 \linhalayout{projeto gráfico}{Lucas Kröeff}
 \linha{imagem da capa}{\imagemcapa}\smallskip
-\linha{ISBN}{\ISBN}\smallskip
+\linha{\textsc{isbn}}{\ISBN}\smallskip
 \begingroup\tiny\smallskip
 %\ifdef{\conselho}{\conselho}{\relax}
 \par\endgroup\bigskip
@@ -68,17 +68,19 @@ Foi feito o depósito legal.\\\endgroup
 %% Front ---------------------------------------------------------
 % Titulo
 \titulagem
+\bigskip
+{\Formular\bfseries\Large \autor \par\vspace{1.5em}}
+% \ifdef{\organizador}{{\small {\organizador} (\textit{organização})} \par}{}
+% \ifdef{\introdutor}{{\small {\introdutor} (\textit{prefácio})} \par}{}
+\newfontfamily\minion{Minion Pro}
+              %{\fontsize{30}{40}\selectfont \minion
+\ifdef\selectfont\minion{\tradutor}{{\small {\tradutor} (\textit{tradução})}\par}{}\vspace{4em}
 
-{\Formular\Large \autor \par\vspace{1.5ex}}
-\ifdef{\organizador}{{\small {\organizador} (\textit{organização})} \par}{}
-\ifdef{\introdutor}{{\small {\introdutor} (\textit{prefácio})} \par}{}
-\ifdef{\tradutor}{{\small {\tradutor} (\textit{tradução})}\par}{}\vspace{1.5cm}
-
-{{\footnotesize{} \ifdef{\numeroedicao}{\numeroedicao}{1}ª edição} \par}
+{{\small{} \ifdef{\numeroedicao}{\numeroedicao}{1}ª edição} \par}
 
 %logos
 \vfill
-\ifdef{\logo}{\IfFileExists{\logo}{\hfill\includegraphics[width=3cm]{./logo.png}\hfill\logoum{}\\ São Paulo\quad2021}}{\includegraphics[width=3cm]{./logo.png}\break{} São Paulo\quad2021}
+\ifdef{\logo}{\IfFileExists{\logo}{\hfill\includegraphics[width=3cm]{./logo.png}\hfill\logoum{}\\ São Paulo\quad2021}}{\includegraphics[width=3cm]{./logo.png}\break{}\medskip São Paulo\quad2021}
 %\includegraphics[width=.4\textwidth,trim=0 0 25 0]{logo.jpg}\\\smallskip
 \par\clearpage\endgroup
 % Resumo -------------------------------------------------------

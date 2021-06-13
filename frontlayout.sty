@@ -1,7 +1,7 @@
 \newcommand{\linhalayout}[2]{{\tiny\textbf{#1}\quad#2\par}}
 \newcommand{\fichalayout}[1]{\includegraphics[width=.8\textwidth]{#1}}
 \newcommand{\linha}[2]{\ifdef{#2}{\linhalayout{#1}{#2}}{}}
-\newcommand{\tipopadrao}{Libertine}
+\newcommand{\tipopadrao}{Minion Pro}
 \newcommand{\DistanciaImagemFront}{\vspace*{.3\textwidth}}
 \newcommand{\LarguraFront}{\textwidth}
 \newcommand{\TamanhoTitulo}{\Huge}
@@ -15,7 +15,7 @@
 \newcommand{\titulagem}{{\vspace*{.12\textheight} 
                       \TamanhoTitulo \baselineskip=.67\baselineskip 
                         {\Formular{\titulo}} 
-                       \par
+                       \par\smallskip
                    \ifdef{\subtit}{\smaller[3] \Formular{\textlt\subtit}\par\medskip}{}}}
 
 \newcommand{\sumario}{\begingroup\mbox{}\pagestyle{empty}\pagebreak\ifodd\thepage\paginabranca\fi
