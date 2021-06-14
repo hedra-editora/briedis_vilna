@@ -71,16 +71,16 @@ Foi feito o depósito legal.\\\endgroup
 \bigskip
 {\Formular\bfseries\Large \autor \par\vspace{1.5em}}
 % \ifdef{\organizador}{{\small {\organizador} (\textit{organização})} \par}{}
-% \ifdef{\introdutor}{{\small {\introdutor} (\textit{prefácio})} \par}{}
 \newfontfamily\minion{Minion Pro}
               %{\fontsize{30}{40}\selectfont \minion
-\ifdef\selectfont\minion{\tradutor}{{\small {\tradutor} (\textit{tradução})}\par}{}\vspace{4em}
+\ifdef\selectfont\minion{\tradutor}{{\small {\tradutor} (\textit{tradução})} \par}{}
+\ifdef{\prefacio}{{\small {\prefacio} (\textit{prefácio})}\par}{}\vspace{4em}
 
 {{\small{} \ifdef{\numeroedicao}{\numeroedicao}{1}ª edição} \par}
 
 %logos
 \vfill
-\ifdef{\logo}{\IfFileExists{\logo}{\hfill\includegraphics[width=3cm]{./logo.png}\hfill\logoum{}\\ São Paulo\quad2021}}{\includegraphics[width=3cm]{./logo.png}\break{}\medskip São Paulo\quad2021}
+\ifdef{\logo}{\IfFileExists{\logo}{\hfill\includegraphics[width=2.5cm]{./logo.png}\hfill\logoum{}\\ São Paulo\quad2021}}{\includegraphics[width=2.5cm]{./logo.png}\\\smallskip São Paulo\quad2021}
 %\includegraphics[width=.4\textwidth,trim=0 0 25 0]{logo.jpg}\\\smallskip
 \par\clearpage\endgroup
 % Resumo -------------------------------------------------------
