@@ -7,7 +7,7 @@
 \newcommand{\TamanhoTitulo}{\Huge}
 \newcommand{\titulagemfront}{\IfFileExists{front.png}{\DistanciaImagemFront\includegraphics[width=\LarguraFront]{front.png}}%
   {\begingroup\vspace*{.05\textheight} 
-                      \TamanhoTitulo \baselineskip=.67\baselineskip 
+                      \TamanhoTitulo %\baselineskip=.67\baselineskip 
                         {\Formular{\titulo}} 
                        \par
                    \ifdef{\subtit}{\smaller[3] \Formular{\textlt\subtit}\par\medskip}{}
@@ -16,7 +16,7 @@
                    \endgroup}}
 
 \newcommand{\titulagem}{{\vspace*{.05\textheight} 
-                      \TamanhoTitulo \baselineskip=.67\baselineskip 
+                      \TamanhoTitulo %\baselineskip=.67\baselineskip 
                         {\Formular{\titulo}} 
                        \par\smallskip
                    \ifdef{\subtit}{\smaller[3] \Formular{\textlt\subtit}\par\medskip}{}}}
